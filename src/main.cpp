@@ -26,7 +26,7 @@
 #include <QQuickView>
 #include <QScopedPointer>
 
-#include <sailfishapp.h>
+#include <auroraapp.h>
 #include <tgclient.h>
 
 #include "avatardownloader.h"
@@ -34,9 +34,12 @@
 #include "models/foldersmodel.h"
 #include "models/messagesmodel.h"
 
+
+using namespace Aurora;
+
 int main(int argc, char* argv[])
 {
-    QScopedPointer<QGuiApplication> application(SailfishApp::application(argc, argv));
+    QScopedPointer<QGuiApplication> application(Application::application(argc, argv));
     application->setOrganizationName(QStringLiteral("ru.neochapay"));
     application->setApplicationName(QStringLiteral("samoletik"));
 
@@ -46,9 +49,9 @@ int main(int argc, char* argv[])
     qmlRegisterType<FoldersModel>("ru.neochapay.samoletik", 1, 0, "FoldersModel");
     qmlRegisterType<MessagesModel>("ru.neochapay.samoletik", 1, 0, "MessagesModel");
 
-    QScopedPointer<QQuickView> view(SailfishApp::createView());
+    QScopedPointer<QQuickView> view(Application::createView());
 
-    view->setSource(SailfishApp::pathTo("qml/Samoletik.qml"));
+    view->setSource(Application::pathTo("qml/Samoletik.qml"));
     view->show();
 
     return application->exec();

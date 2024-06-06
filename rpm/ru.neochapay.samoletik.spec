@@ -1,16 +1,18 @@
 %define __provides_exclude_from ^%{_datadir}/%{name}/.*$
-%define __requires_exclude ^lib.*\\.*$
+%define __provides_exclude_from ^%{_datadir}/%{name}/lib/.*$
+%define __requires_exclude ^libkg.*$
+
 
 Name:       ru.neochapay.samoletik
 Summary:    Simple TG client
 Version:    0.0.1
 Release:    0
 Group:      Qt/Qt
-License:    GNU GPLv3
+License:    GPLv3+
 URL:        https://neochapay.ru
 Source:     %{name}-%{version}.tar.bz2
 Requires:   sailfishsilica-qt5 >= 0.10.9
-BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
+BuildRequires:  pkgconfig(auroraapp) >= 1.0.2
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)

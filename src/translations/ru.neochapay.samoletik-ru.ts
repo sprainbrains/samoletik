@@ -5,26 +5,26 @@
     <name>AuthPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Логин</translation>
     </message>
     <message>
         <source>Your Phone Number</source>
-        <translation type="unfinished"></translation>
+        <translation>Твой номер телефона</translation>
     </message>
     <message>
         <source>Please, enter your phone number</source>
-        <translation type="unfinished"></translation>
+        <translation">Пожалуйста, введите свой номер телефона</translation>
     </message>
     <message>
         <source>Send me code</source>
-        <translation type="unfinished"></translation>
+        <translation>Отправить мне код</translation>
     </message>
 </context>
 <context>
     <name>ConfirmCodePage</name>
     <message>
         <source>Confirm code</source>
-        <translation type="unfinished"></translation>
+        <translation>Подтвердить код</translation>
     </message>
     <message>
         <source>Confirmation Code</source>

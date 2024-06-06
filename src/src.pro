@@ -1,7 +1,7 @@
 TARGET = ru.neochapay.samoletik
 
 CONFIG += \
-    sailfishapp
+    auroraapp
 
 QT += core qml quick network xml
 
@@ -24,7 +24,7 @@ HEADERS += \
     models/foldersmodel.h \
     models/messagesmodel.h
 
-SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172 256x256
+AURORAAPP_ICONS = 86x86 108x108 128x128 172x172 256x256
 
 CONFIG += sailfishapp_i18n
 

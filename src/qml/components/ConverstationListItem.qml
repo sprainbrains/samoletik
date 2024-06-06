@@ -68,6 +68,7 @@ Item {
 
             Text {
                 text: title
+                color: Theme.primaryColor
                 elide: Text.ElideRight
                 font.pixelSize: Theme.fontSizeLarge
                 anchors.top: parent.top
@@ -94,7 +95,7 @@ Item {
                 id: messageSenderLabel
                 text: messageSenderName
                 color: messageSenderColor
-                font.pixelSize: Theme.fontSizeLarge
+                font.pixelSize: Theme.fontSizeSmall
                 anchors.top: parent.top
                 anchors.left: parent.left
             }
